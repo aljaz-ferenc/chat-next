@@ -78,10 +78,11 @@ if(eventType === 'user.updated'){
 		username: username!,
 		firstName: first_name,
 		lastName: last_name,
-		image: image_url
+		image: image_url,
+        clerkId: id
 	}
 	
-	// await actions.updateUser(id, user)
+	await actions.updateUser(user)
 }
 
 if(eventType === 'user.deleted'){
